@@ -2,22 +2,22 @@ version: 0.0
 os: linux
 files:
   - source: /
-    destination: /home/ec2-user/
+    destination: /var/www/html/
 hooks:
   BeforeInstall:
-    - location: script/test.sh
+    - location: script/install_dependencies.sh
       timeout: 300
       runas: root
   AfterInstall:
-    - location: script/test.sh
+    - location: script/change_permissions.sh
       timeout: 300
       runas: root
   ApplicationStart:
-    - location: script/test.sh
-    - location: script/test.sh
+    - location: script/start_server.sh
+    - location: script/create_test_db.sh
       timeout: 300
       runas: root
   ApplicationStop:
-    - location: script/test.sh
+    - location: script/stop_server.sh
       timeout: 300
       runas: root
