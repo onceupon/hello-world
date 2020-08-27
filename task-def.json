@@ -16,7 +16,7 @@
           "memory": 1024,
           "essential": true,
           "logConfiguration": {
-            "logDriver": "sample-fargate",
+            "logDriver": "awslogs",
             "options": {
               "awslogs-group": "/ecs/sample-fargate",
               "awslogs-region": "us-east-1",
