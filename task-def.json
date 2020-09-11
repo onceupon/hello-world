@@ -21,7 +21,7 @@
               "awslogs-create-group": "True",
               "awslogs-group": "/ecs/sample-fargate-test",
               "awslogs-region": "us-east-1",
-              "awslogs-stream-prefix": "ecs-test"
+              "awslogs-stream-prefix": "ecs"
             }
           }
       }
