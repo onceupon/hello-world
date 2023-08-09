@@ -47,5 +47,6 @@ Actions:
       Wait: true
       AWSRegion: us-west-2
       Port: 80
+      ImageIdentifier: 091953878586.dkr.ecr.us-west-2.amazonaws.com/codecatalyst-hello-world
     DependsOn:
       - PushToAmazonECR_e9
