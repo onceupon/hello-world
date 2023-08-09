@@ -28,6 +28,7 @@ Actions:
     Configuration:
       RepositoryName: codecatalyst-hello-world
       AWSRegion: us-west-2
+      ImageTag: latest
       PublicRepository: false
       ImageScanningConfiguration: false
   DeployToAWSAppRunner_af:
